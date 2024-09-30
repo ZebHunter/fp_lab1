@@ -57,9 +57,8 @@ let seq_solve f =
   |> fst
 ;;
 
-
 (*
-  Simple cicles sollution
+   Simple cicles sollution
 *)
 
 let imp_solve n =
@@ -67,9 +66,10 @@ let imp_solve n =
   let maxim = ref 0 in
   for i = 1 to n do
     let len = tail_collatz i 1 in
-    if !maxim < len then begin
+    if !maxim < len
+    then (
       maxim := len;
-      ci := i;
-    end;
+      ci := i)
   done;
   !ci
+;;
