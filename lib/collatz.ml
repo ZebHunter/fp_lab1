@@ -33,8 +33,7 @@ let rec tail_max_chain_val n len acc =
 
 let generate_list_collatz n = List.init n (fun x -> x + 1, tail_collatz (x + 1) 1)
 
-let get_first_el list =
-  match list with
+let get_first_el = function
   | [] -> failwith "List is empty"
   | h :: _ -> h
 ;;

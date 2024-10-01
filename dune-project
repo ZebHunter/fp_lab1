@@ -5,9 +5,9 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github ZebHunter/fp_lab1))
 
-(authors "Author Name")
+(authors "Mikhail Rogachev")
 
 (maintainers "Maintainer Name")
 
